@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Completa - Sin Imágenes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #c1121f;
+      padding: 1rem 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #9e0e1a;
+      width: 100%;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu > li > a {
+      display: block;
+      padding: 1rem 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .menu > li > a:hover {
+      background-color: #7f0b14;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #c1121f;
+      border-radius: 0 0 10px 10px;
+      min-width: 200px;
+      z-index: 1000;
+    }
+
+    .submenu li a {
+      padding: 0.75rem 1rem;
+      display: block;
+      color: white;
+      text-decoration: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .submenu li a:hover {
+      background-color: #9e0e1a;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #c1121f;
+    }
+
+    main p {
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Página de Jugadores</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Inicio</a></li>
+      <li>
+        <a href="#">Categorías ▾</a>
+        <ul class="submenu">
+          <li><a href="hfhfh.html">Porteros</a></li>
+          <li><a href="ndhs.html">Defensas</a></li>
+          <li><a href="medios.html">Mediocampistas</a></li>
+          <li><a href="del.html">Delanteros</a></li>
+          <li><a href="hsg.html">Jugadores Legendarios</a></li>
+          <li><a href="tyjgd.html">Mejor XI de la Historia</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Bienvenido a la Galería de Jugadores</h2>
+    <p>Explora a los más grandes jugadores de la historia del fútbol, desde míticos porteros como Lev Yashin hasta delanteros icónicos como Ronaldo Nazário y Messi.</p>
+    <p>Nuestra plataforma te guía por las trayectorias, estadísticas y momentos legendarios que definieron el deporte rey.</p>
+    <p>Haz clic en cualquier categoría del menú para comenzar tu recorrido por el legado del fútbol.</p>
+    <p>Cada sección ha sido diseñada para que descubras curiosidades, títulos obtenidos, clubes donde brillaron y el impacto que estos cracks dejaron en sus selecciones nacionales.</p>
+    <p>No importa si eres fanático de los años dorados del fútbol o seguidor de la nueva generación: aquí encontrarás una recopilación visual y narrativa que rinde homenaje a los mejores.</p>
+  </main>
+
+  <footer>
+    © 2025 Página de Jugadores. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
