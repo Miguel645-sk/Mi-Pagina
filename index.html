@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Página de jugadores</title>
-   <meta name="description" content="Conoce el mejor equipo de fútbol de todos los tiempos con Messi, Maradona, Ronaldinho, Puyol y más.">
-  <meta name="keywords" content="fútbol, Messi, Maradona, Ronaldinho, mejor once, XI histórico, leyendas del fútbol, mejores jugadores, historia del fútbol">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <title>El mejor 11 de la historia del fútbol</title>
 
+  <!-- SEO básico -->
+  <meta name="description" content="Conoce el mejor equipo de fútbol de todos los tiempos con Messi, Maradona, Ronaldinho, Puyol y más.">
+  <meta name="keywords" content="fútbol, Messi, Maradona, Ronaldinho, mejor once, XI histórico, leyendas del fútbol, mejores jugadores, historia del fútbol">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph (para redes y Google) -->
+  <meta property="og:title" content="El mejor 11 de la historia del fútbol">
+  <meta property="og:description" content="Messi, Maradona, Ronaldinho y más jugadores legendarios en el equipo ideal.">
+  <meta property="og:image" content="https://miguel645-sk.github.io/Mi-Pagina/XI.png">
+  <meta property="og:url" content="https://miguel645-sk.github.io/Mi-Pagina/">
+  <meta property="og:type" content="website">
+
+  <style>
+    /* (Todo el estilo permanece igual) */
+    * { box-sizing: border-box; }
     html, body {
       margin: 0;
       padding: 0;
@@ -19,29 +30,21 @@
       background-color: #f2f2f2;
       color: #333;
     }
-
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-
+    body { display: flex; flex-direction: column; }
     header {
       background-color: #c1121f;
       padding: 1rem 0;
       text-align: center;
       color: white;
     }
-
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-
     nav {
       background-color: #9e0e1a;
       width: 100%;
     }
-
     .menu {
       display: flex;
       justify-content: center;
@@ -50,11 +53,9 @@
       margin: 0;
       padding: 0;
     }
-
     .menu > li {
       position: relative;
     }
-
     .menu > li > a {
       display: block;
       padding: 1rem 1.5rem;
@@ -63,11 +64,9 @@
       font-weight: bold;
       transition: background-color 0.3s;
     }
-
     .menu > li > a:hover {
       background-color: #7f0b14;
     }
-
     .submenu {
       display: none;
       position: absolute;
@@ -78,7 +77,6 @@
       min-width: 200px;
       z-index: 1000;
     }
-
     .submenu li a {
       padding: 0.75rem 1rem;
       display: block;
@@ -87,15 +85,12 @@
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       transition: background-color 0.3s;
     }
-
     .submenu li a:hover {
       background-color: #9e0e1a;
     }
-
     .menu li:hover .submenu {
       display: block;
     }
-
     main {
       flex-grow: 1;
       display: flex;
@@ -107,25 +102,29 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-
     main h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
       color: #c1121f;
     }
-
     main p {
       font-size: 1rem;
       line-height: 1.5;
       max-width: 800px;
       margin: 0.5rem 0;
     }
-
     footer {
       background-color: #333;
       color: white;
       padding: 1rem;
       text-align: center;
+    }
+    img.featured {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -154,6 +153,11 @@
   </nav>
 
   <main>
+    <h1>El mejor 11 de la historia del fútbol</h1>
+    <p>Jugadores como Messi, Maradona, Puyol, Casillas y Ronaldinho forman parte del once ideal más legendario de todos los tiempos.</p>
+
+    <img src="XI.png" alt="Once ideal histórico con Messi, Maradona, Casillas y Ronaldinho" class="featured">
+
     <h2>Bienvenido a la Galería de Jugadores</h2>
     <p>Explora a los más grandes jugadores de la historia del fútbol, desde míticos porteros como Lev Yashin hasta delanteros icónicos como Ronaldo Nazário y Messi.</p>
     <p>Nuestra plataforma te guía por las trayectorias, estadísticas y momentos legendarios que definieron el deporte rey.</p>
